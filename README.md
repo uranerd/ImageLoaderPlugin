@@ -25,4 +25,4 @@ It is reccomended to have at least 8MB of ram allocated to the server, although 
 If it is an error that gets sent to the player, chances are it is expected, i.e there were no loaded images, or you tried to fill too many item frames, however, if there is an uncaught error in the server console, or it says "An internal error occurred while attempting to perform this command", try and get the console output to debug it further, you can try opening an error in github, but I am not that good at github and this project was made for a school project (I do not know if I will maintain it), so chances are I will not reply.
 Chances are there will be errors, as this is the first released version.
 # Can I fork this?
-Sure, feel free to fork, and edit the code as much as you would like, the only requirement is that you credit me for the origional code.
+Sure, feel free to fork, and edit the code as much as you would like, the only requirement is that you credit me for the original code.
