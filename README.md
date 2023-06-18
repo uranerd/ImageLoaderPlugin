@@ -2,6 +2,8 @@
 A Minecraft plugin for 1.19 version that loads the specified images and displays them on maps.
 # How does it do this?
 Using maps you can load images, combinding some code to load images from a directory, you can loop through all the images and display them on maps.
+# Where to download?
+To download this go to the 'releases' section and choose the latest release, you can then move the .jar file to the 'plugins' folder in your Minecraft server and reload the Minecraft server to load the plugin.
 # How do I use this?
 There are a few commands to use (you have to have OP to use all of them, and it has to be sent by a player, command blocks or console can not use these commands):
 
