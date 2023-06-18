@@ -35,6 +35,7 @@ public class MapRendererBuffer extends MapRenderer {
     }
 
     public void setUniqueID(int uniqueID) {
+        /*Sets the unique ID*/
         this.uniqueID = uniqueID;
     }
 }
