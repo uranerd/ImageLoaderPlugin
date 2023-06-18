@@ -36,7 +36,7 @@ public class MiscUtils {
             return;
         }
         if (!MapUpdater.cancelUpdaterRunnable(mapRendererBuffer.getUniqueID()) && cause != null) {
-            cause.sendMessage(ImageLoaderMain.getAstroPIMessage(MapUpdater.getLastError(), true));
+            cause.sendMessage(ImageLoaderMain.imageLoaderMessage(MapUpdater.getLastError(), true));
         }
     }
     public static MapRendererBuffer getMapRendererBuffer(final ItemStack map) {

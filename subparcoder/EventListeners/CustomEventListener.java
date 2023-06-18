@@ -56,7 +56,7 @@ public class CustomEventListener implements Listener {
                 List<MapRenderer> renderers = meta.getMapView().getRenderers();
                 if (renderers.size() == 1 && renderers.get(0) instanceof MapRendererNoBuffer) {
                     //this map is a fill map, which we don't want to allow in an item frame
-                    event.getPlayer().sendMessage(ImageLoaderMain.getAstroPIMessage("You can not place that map in an item frame!", true));
+                    event.getPlayer().sendMessage(ImageLoaderMain.imageLoaderMessage("You can not place that map in an item frame!", true));
                     event.setCancelled(true);
                 }
             }
@@ -68,7 +68,7 @@ public class CustomEventListener implements Listener {
         }
         event.setCancelled(true);
         if (!ImageManagerUtil.hasLoadedBytes()) {
-            player.sendMessage(ImageLoaderMain.getAstroPIMessage("Make sure there are loaded images! (/imgload)", true));
+            player.sendMessage(ImageLoaderMain.imageLoaderMessage("Make sure there are loaded images! (/imgload)", true));
             return;
         }
         int ticksBetween, threads;
@@ -81,7 +81,7 @@ public class CustomEventListener implements Listener {
         }
         //this method actually fills all the item frames if possible
         if (!MapUtils.fillAllItemFrames((ItemFrame) event.getRightClicked(), player.getWorld(), event, ticksBetween, threads)) {
-            player.sendMessage(ImageLoaderMain.getAstroPIMessage(MapUtils.getLastError(), true));
+            player.sendMessage(ImageLoaderMain.imageLoaderMessage(MapUtils.getLastError(), true));
         }
     }
 

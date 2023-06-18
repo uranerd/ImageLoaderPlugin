@@ -106,11 +106,11 @@ public class MapUtils {
                 if (atomicArray.isArrayUpdated()) {
                     if (!atomicArray.hasArray()){
                         lastError = ImageManagerUtil.getLastError();
-                        event.getPlayer().sendMessage(ImageLoaderMain.getAstroPIMessage(lastError, true));
+                        event.getPlayer().sendMessage(ImageLoaderMain.imageLoaderMessage(lastError, true));
                     } else {
                         boolean failed = !MapUtils.fillFramesWithMap(atomicArray.get(), topRight, bottomLeft, face, event, xDif, zDif, multX.get(), multZ.get(), ticksBetween, resizeHeight);
                         if (failed) {
-                            event.getPlayer().sendMessage(ImageLoaderMain.getAstroPIMessage(lastError, true));
+                            event.getPlayer().sendMessage(ImageLoaderMain.imageLoaderMessage(lastError, true));
                         }
                     }
                     cancel();
