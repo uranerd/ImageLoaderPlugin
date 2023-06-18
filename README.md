@@ -18,5 +18,6 @@ There are a few commands to use (you have to have OP to use all of them, and it 
 # Will this lag?
 It depends, the more images you use, the more it will lag, and the more item frames you display them on, the laggier and more 'tearing' can be seen in the display maps.
 Also the more threads you use for resizing an image, the more intensive it will be but it will be quicker.
+It is reccomended to have at least 8MB of ram allocated to the server, although you can get away using less ram if you plan on loading only a few images.
 # What to do if I get an error?
 If it is an error that gets sent to the player, chances are it is expected, i.e there were no loaded images, or you tried to fill too many item frames, however, if there is an uncaught error in the server console, or it says "An internal error occurred while attempting to perform this command", try and get the console output to debug it further, you can try opening an error in github, but I am not that good at github and this project was made for a school project (I do not know if I will maintain it), so chances are I will not reply.  
