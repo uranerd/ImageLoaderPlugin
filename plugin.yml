@@ -1,0 +1,22 @@
+main: subparcoder.ImageLoaderMain
+name: ImageLoader
+version: 1.0
+api-version: 1.19
+author: subparcoder
+description: A plugin for loading/displaying images in minecraft
+commands:
+  getmap:
+    description: Gives sender a map that switches between all the loaded images at the specified fps
+    usage: /<command> <fps> <threads>
+  getfillmap:
+    description: Gives sender a map that when placed displays the loaded images
+    usage: /<command> <fps> <threads>
+  imgload:
+    description: Load specified image folder images into memory
+    usage: /<command> <image folder> <image format> <replacer>
+  setsearches:
+    description: Sets the maximum image searches for adjacent item frames
+    usage: /<command> <max searches>
+  getsearches:
+    description: Sends the player the max adjacent searches
+    usage: /<command>
